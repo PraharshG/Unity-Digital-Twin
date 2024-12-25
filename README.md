@@ -40,3 +40,11 @@ This project creates a **digital twin** of a human fall detection system. It mir
 1. Install Python dependencies:  
    ```bash
    pip install pyserial
+
+## Setup Instructions
+
+### 2. Set Up the Bridge Script
+1. Install Python dependencies:  
+   ```bash
+   pip install pyserial
+   
