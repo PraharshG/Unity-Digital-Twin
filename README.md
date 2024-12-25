@@ -80,8 +80,7 @@ This project creates a **digital twin** of a human fall detection system. It mir
 2. Run the `bridge.py` script to forward data to Unity.
 3. Open Unity and play the scene to observe the virtual Banana Man mirroring the physical object's motion.
 
----
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
 
