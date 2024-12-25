@@ -81,6 +81,10 @@ This project creates a **digital twin** of a human fall detection system. It mir
 3. Open Unity and play the scene to observe the virtual Banana Man mirroring the physical object's motion.
 
 
+---
+
+## Demo Video
+[Download Video](media/demo.mp4)
 
 
 
