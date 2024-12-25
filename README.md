@@ -40,11 +40,48 @@ This project creates a **digital twin** of a human fall detection system. It mir
 1. Install Python dependencies:  
    ```bash
    pip install pyserial
-
-## Setup Instructions
-
-### 2. Set Up the Bridge Script
-1. Install Python dependencies:  
+   ```
+2. Run `bridge.py` to start relaying orientation data:  
    ```bash
-   pip install pyserial
-   
+   python bridge.py
+   ```
+
+### 3. Import the Banana Man Model into Unity
+1. Download the Banana Man model from the Unity Asset Store or any 3D model source.
+2. In Unity:
+   - Go to **Assets > Import Package > Custom Package**.
+   - Select and import the Banana Man model package into your Unity project.
+
+### 4. Add the Orientation Script to the Banana Man Object
+1. Copy the `Orientation.cs` file into your Unity project's **Assets** folder.
+2. In the Unity Editor:
+   - Drag and drop the Banana Man model into the Scene view.
+   - Select the Banana Man object in the Hierarchy panel.
+   - In the Inspector panel, click **Add Component**.
+   - Search for `Orientation` and add it to the Banana Man object.
+3. Ensure the script is properly linked to receive orientation data from the `bridge.py` socket.
+
+---
+
+## File Descriptions
+- **`getOrientation.ino`**  
+  Arduino/ESP32 script that calculates and outputs the object's orientation to the serial port.
+  
+- **`bridge.py`**  
+  Python script to bridge serial data to Unity via a socket connection.
+  
+- **`Orientation.cs`**  
+  Unity script to update the virtual object's orientation in real-time.
+
+---
+
+## Usage
+1. Start the physical object to stream orientation data.
+2. Run the `bridge.py` script to forward data to Unity.
+3. Open Unity and play the scene to observe the virtual Banana Man mirroring the physical object's motion.
+
+---
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
