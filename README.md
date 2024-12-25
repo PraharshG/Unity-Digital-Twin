@@ -1,5 +1,2 @@
-This project contains a digital twin of a human fall detection system. A MPU6050 sensor connected to an arduino or an ESP32 gives the orientation of a physical object. 
-The motion and orrientation of the physical object is mirrored into the digital twin in unity.
-The bridge.py file acts as a mediator between the incoming serial values and unity. Unity on mac currently does not offer support to open serial ports
-The getOrientation.ino file publishes orientation values continuosly into the serial port.
-The Orientation.cs file is the object file for the virtual object
+Digital Twin for Human Fall Detection System
+This project creates a digital twin of a human fall detection system. It mirrors the orientation and motion of a physical object, measured by an MPU6050 sensor connected to an Arduino or ESP32, into a Unity environment. The system is designed to track and replicate physical movements in real-time, providing a virtual visualization of orientation.
