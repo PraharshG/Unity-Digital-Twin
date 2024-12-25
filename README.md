@@ -84,7 +84,7 @@ This project creates a **digital twin** of a human fall detection system. It mir
 ---
 
 ## Demo Video
-[Download Video](media/demo.mp4)
+[Download Video](DemoVid.mp4)
 
 
 
